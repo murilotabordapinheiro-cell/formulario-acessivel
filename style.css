@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #1b2838; 
+    color: #c5c3c0; 
+    padding: 20px;
+}
+
+header, main, footer {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    background: #171a21; 
+    padding: 30px;
+    border-radius: 4px;
+}
+
+header {
+    text-align: left;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #8f98a0;
+    font-size: 0.9rem;
+}
+
+footer {
+    background: transparent;
+    text-align: left;
+    font-size: 0.75rem;
+    color: #61686d;
+    line-height: 1.4;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #c5c3c0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #32353c;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    color: #ffffff;
+    width: 100%;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+fieldset {
+    border: 1px solid #32353c;
+    border-radius: 3px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    background-color: #121418;
+}
+
+legend {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #66c0f4;
+}
+
+.opcao-grupo {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.opcao-grupo input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+    accent-color: #66c0f4;
+}
+
+.opcao-grupo label {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: #b8b6b4;
+}
+
+.mensagem-erro {
+    display: block;
+    color: #ff4d4d; 
+    font-size: 0.85rem;
+    margin-top: 6px;
+    font-weight: normal;
+}
+
+button {
+    background: linear-gradient( to right, #47b230 0%, #5cba47 100%); 
+    color: #ffffff;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: linear-gradient( to right, #53c937 0%, #68d453 100%);
+}
+
+input:focus,
+button:focus,
+fieldset:focus-within {
+    outline: 2px solid #66c0f4; 
+    outline-offset: 2px;
+}
