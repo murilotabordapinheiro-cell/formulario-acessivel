@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta - Steam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">STEAM</div>
+        <h1>Criar sua conta</h1>
+        <p>Preencha os dados abaixo para configurar sua conta Steam. Campos com * são obrigatórios.</p>
+    </header>
+
+    <main>
+        <form action="#" method="POST" novalidate>
+
+            <div class="campo-grupo">
+                <label for="email-steam">Endereço de e-mail *</label>
+                <input type="email" id="email-steam" name="email-steam" required aria-required="true" aria-describedby="erro-validacao-email">
+                <!-- Mensagem de erro acessível exigida pelo checklist -->
+                <span id="erro-validacao-email" class="mensagem-erro" role="alert">Insira um endereço de e-mail válido para receber a verificação.</span>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="confirmar-email">Confirme o seu endereço de e-mail *</label>
+                <input type="email" id="confirmar-email" name="confirmar-email" required aria-required="true">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="nome-usuario">Nome de usuário Steam desejado *</label>
+                <input type="text" id="nome-usuario" name="nome-usuario" required aria-required="true">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </div>
+
+            <fieldset>
+                <legend>Quais notificações você deseja receber por e-mail? *</legend>
+                
+                <div class="opcao-grupo">
+                    <input type="checkbox" id="notif-promocoes" name="notificacoes" value="promocoes" checked required aria-required="true">
+                    <label for="notif-promocoes">Itens da minha lista de desejos em promoção</label>
+                </div>
+
+                <div class="opcao-grupo">
+                    <input type="checkbox" id="notif-atualizacoes" name="notificacoes" value="atualizacoes">
+                    <label for="notif-atualizacoes">Atualizações e patches dos meus jogos favoritados</label>
+                </div>
+
+                <div class="opcao-grupo">
+                    <input type="checkbox" id="notif-seguranca" name="notificacoes" value="seguranca">
+                    <label for="notif-seguranca">Alertas críticos de segurança e acessos à conta</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Continuar</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Valve Corporation. Steam.</p>
+    </footer>
+
+</body>
+</html>
